@@ -9,7 +9,7 @@ TaskTracker is a minimal web application designed to help students organize dail
 Students struggle to keep track of multiple deadlines across different platforms, leading to missed assignments and stress.
 
 ### Target Personas
-- **Primary Persona:** Vinay, a college student balancing 5 classes and extracurriculars who needs a simple 1-click task logger.
+- **Primary Persona:** vinayak, a college student balancing 5 classes and extracurriculars who needs a simple 1-click task logger.
 
 ### Vision Statement
 To become the friction-free task management tool for students who want clear daily priorities without setup complexity.
