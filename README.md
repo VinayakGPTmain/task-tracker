@@ -1,58 +1,45 @@
-# TaskTracker
+# Task Tracker — Project Vision & Documentation
 
-## Overview & Vision Document
-
-### Project Overview
-TaskTracker is a minimal web application designed to help students organize daily assignments and track study progress without clutter.
+## 1. Vision Document
 
 ### Problem Statement
-Students struggle to keep track of multiple deadlines across different platforms, leading to missed assignments and stress.
+Modern professionals and students struggle with scattered tasks across non-persistent or overly complex project management tools. Existing solutions often carry heavy overhead, require account creation, or lack offline resiliency. The **Task Tracker App** provides a lightweight, zero-overhead, privacy-first task management tool served locally via lightweight containerized infrastructure.
 
 ### Target Personas
-- **Primary Persona:** vinayak, a college student balancing 5 classes and extracurriculars who needs a simple 1-click task logger.
+* **Devin (Software Developer):** Needs a quick, keyboard-driven tool to manage daily task lists without navigating heavy enterprise web applications.
+* **Priya (Engineering Student):** Requires a reliable, distraction-free interface to track assignment deadlines that persists state locally across browser reloads.
 
 ### Vision Statement
-To become the friction-free task management tool for students who want clear daily priorities without setup complexity.
+"To provide a seamless, high-performance, containerized task management experience that balances raw functional efficiency with local-first data privacy."
 
-### Key Features & Goals
-- User authentication (sign up / log in).
-- Create, edit, toggle, and delete daily tasks.
-- Categorize tasks by subject or priority.
+### Key Features & Value Proposition
+* **Zero Latency & Local Persistence:** Fast CRUD operations backed by browser LocalStorage.
+* **Granular Organization:** Due dates, priority levels (High/Medium/Low), and category tagging.
+* **Dynamic Search & Filtering:** Live search filtering alongside status tabs (All / Active / Completed).
+* **Containerized Deployment:** Powered by lightweight Nginx on Docker Alpine for consistent cross-platform execution.
 
 ### Success Metrics
-- 80% task completion rate for active users.
-- Sub-100ms response time for adding/updating tasks.
-
-### Assumptions & Constraints
-- Users have basic browser access and an internet connection.
-- Built within free-tier deployment limits (e.g., local Docker container / static hosting).
+* 100% functional coverage across all 25 mapped user stories.
+* Sub-100ms UI interaction responsiveness.
+* Zero external backend dependencies for core operations.
 
 ---
 
-## Branching Strategy
-We follow **GitHub Flow**:
-- `main`: Production-ready code.
-- `feature/*`: Short-lived feature branches created from `main` (e.g., `feature/docker-setup`).
-- Pull Requests (PRs) are reviewed and merged into `main`.
+## 2. Technical Architecture & Setup
 
----
+### Tech Stack
+* **Frontend:** HTML5, CSS3, Modern JavaScript (ES6+)
+* **Container Layer:** Docker, Nginx (Alpine Linux distribution)
+* **Version Control & Management:** Git, GitHub Flow, GitHub Projects (Kanban)
 
-## Local Development Tools
-- **Code Editor:** VS Code
-- **Containerization:** Docker Desktop
-- **Version Control:** Git & GitHub
+### Local Development Setup
 
----
+#### Prerequisites
+* Docker Desktop installed and running
+* Git installed
 
-## Quick Start – Local Development
-
-### Prerequisites
-- Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) and ensure it is running.
-
-### Running locally with Docker
-
-1. **Clone the repository:**
+#### Execution Instructions
+1. Clone the repository:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/task-tracker.git](https://github.com/YOUR_USERNAME/task-tracker.git)
+   git clone [https://github.com/VinayakGPTmain/task-tracker.git](https://github.com/VinayakGPTmain/task-tracker.git)
    cd task-tracker
-
